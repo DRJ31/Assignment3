@@ -1,0 +1,37 @@
+/*
+UIC PANICS 2016
+2016.11.16
+For IT 12 Assignment 3
+*/
+
+/*Addition CSS*/
+
+
+.mainimgc{
+    max-width: 100%;
+    border-radius:9px;
+    clear: both; 
+    display: block; 
+    margin:auto; 
+}
+
+.textblack{
+    color: #000;
+}
+
+.tablestyle{
+    border: 1;
+}
+
+#header .headingc{
+    color: #FFF;
+}
+
+/*#header{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    height: 200px;
+    background-image: url('../img/course.jpg');
+    background-size: 1920px;
+}*/
