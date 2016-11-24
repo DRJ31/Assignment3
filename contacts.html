@@ -12,6 +12,62 @@ function(){
 $(this).animate({bottom:'0px'},100);});
 });
 </script>
+<script>
+$(document).ready(function(){
+$(".cardframe1").hover(function(){
+$(this).animate({bottom:'10px'},100);},
+function(){
+$(this).animate({bottom:'0px'},100);});
+});
+</script>
+<script>
+$(document).ready(function(){
+$(".cardframe2").hover(function(){
+$(this).animate({bottom:'10px'},100);},
+function(){
+$(this).animate({bottom:'0px'},100);});
+});
+</script>
+<script>
+$(document).ready(function(){
+$(".cardframe3").hover(function(){
+$(this).animate({bottom:'10px'},100);},
+function(){
+$(this).animate({bottom:'0px'},100);});
+});
+</script>
+<script>
+$(document).ready(function(){
+$(".cardframe1").hover(function(){
+$(".qrcode1 img").show(500);},
+function(){
+$(".qrcode1 img").hide(500);});
+});
+</script>
+<script>
+$(document).ready(function(){
+$(".cardframe2").hover(function(){
+$(".qrcode2 img").show(500);},
+function(){
+$(".qrcode2 img").hide(500);});
+});
+</script>
+<script>
+$(document).ready(function(){
+$(".cardframe3").hover(function(){
+$(".qrcode3 img").show(500);},
+function(){
+$(".qrcode3 img").hide(500);});
+});
+</script>
+<script>
+$(document).ready(function(){
+$(".cardframe").hover(function(){
+$(".qrcode img").show(500);},
+function(){
+$(".qrcode img").hide(500);});
+});
+</script>
 <style>
 table{
 	text-align: center;
@@ -35,8 +91,8 @@ a{
 	margin-left: 5%;
 	margin-right: 5%;
 	position: relative;
-	height:500px;
-	overflow: auto;
+	height:600px;
+	overflow: hidden;
 	animation-duration: 2s;
 }
 
@@ -45,7 +101,7 @@ a{
 	width:70%;
 	min-height: 1000px;
 	position: relative;
-	overflow: hidden;
+	overflow: auto;
 }
 
 @media (max-width: 1000px){
@@ -66,8 +122,42 @@ a{
   box-shadow: 0px 5px 20px #999;
   border-radius: 4px;
 }
-
-
+.cardframe1{
+  width:90%;
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  position: relative;
+  overflow: auto;
+  transition: 0.2s;
+  box-shadow: 0px 5px 20px #999;
+  border-radius: 4px;
+}
+.cardframe2{
+  width:90%;
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  position: relative;
+  overflow: auto;
+  transition: 0.2s;
+  box-shadow: 0px 5px 20px #999;
+  border-radius: 4px;
+}
+.cardframe3{
+  width:90%;
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  position: relative;
+  overflow: auto;
+  transition: 0.2s;
+  box-shadow: 0px 5px 20px #999;
+  border-radius: 4px;
+}
 #photo1{
   background: url(course/img/drj.jpg) center / cover;
   height:220px;
@@ -167,6 +257,32 @@ a{
 	box-shadow: 0px 2px 10px #999;
 }
 }
+.qrcode{
+    width: 100px;
+ }
+ .qrcode img{
+ 	margin-top: 20px;
+ 	display: none;
+ 	border-radius: 5px;
+}
+
+ .qrcode1 img{
+ 	margin-top: 20px;
+ 	display: none;
+ 	border-radius: 5px;
+}
+
+ .qrcode2 img{
+ 	margin-top: 20px;
+ 	display: none;
+ 	border-radius: 5px;
+}
+
+ .qrcode3 img{
+ 	margin-top: 20px;
+ 	display: none;
+ 	border-radius: 5px;
+}
 </style>
 <title>Contacts</title>
 </head>
@@ -219,7 +335,9 @@ a{
 						<!--javascript-->
 
 							<div class="wcontainer">
-                <div class="cards">
+							
+							
+							<div class="cards">
 								<div class="cardframe">
 								<div id="photo1">
 								<div class="name">
@@ -237,10 +355,11 @@ a{
 
 							</div>
 							<a href="course.html"><div class="button1"><p class="coursefont">Favorite Course</p></div></a>
+							<div class="qrcode" align="center"><img src="course/img/qrdeng.jpg" width="120px"></div>
 							</div>
 
 <div class="cards">
-							<div class="cardframe">
+							<div class="cardframe1">
 								<div id="photo2">
 								<div class="name">
 								<p class="namefont">Li Minyong</p>
@@ -257,9 +376,12 @@ a{
 
 </div>
 <a href="http://uiccst.space/stuweb.uic.edu.hk/l630003027/course.html"><div class="button2"><p class="coursefont">Favorite Course</p></div></a>
+<div class="qrcode1" align="center"><img src="course/img/qrli.jpg" width="120px"></div>
 </div>
+
+
 <div class="cards">
-<div class="cardframe">
+<div class="cardframe2">
 								<div id="photo3">
 								<div class="name">
 								<p class="namefont">Luo Zichen</p>
@@ -276,9 +398,11 @@ a{
 
 </div>
 <a href="http://uiccst.space/stuweb.uic.edu.hk/l630003040/course.html"><div class="button3"><p class="coursefont">Favorite Course</p></div></a>
+<div class="qrcode2" align="center"><img src="course/img/qrluo.jpg" width="120px"></div>
 </div>
+
 <div class="cards">
-<div class="cardframe">
+<div class="cardframe3">
 								<div id="photo4">
 								<div class="name">
 								<p id="wu" class="namefont">Wu Zhenghao</p>
@@ -295,6 +419,7 @@ a{
 
 </div>
 <a href="http://uiccst.space/stuweb.uic.edu.hk/l630003054/course.html"><div class="button4"><p class="coursefont">Favorite Course</p></div></a>
+<div class="qrcode3" align="center"><img src="course/img/qrwu.jpg" width="120px"></div>
 </div>
 							</div>
 						<div class="wblank"></div>
