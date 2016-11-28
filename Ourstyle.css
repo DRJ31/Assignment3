@@ -106,7 +106,7 @@ body{
     margin: 0px;
     border: 0px;
     height: 200px;
-    background-image: url('./img/default_header.jpg');
+    background-image: url('img/default_header.jpg');
     background-size: 1920px;
 }
 
@@ -207,6 +207,10 @@ body{
     list-style: none;
 }
 
+.nava_on{
+    color: #000;
+}
+
 /*.nava{
 
 }*/
@@ -260,7 +264,7 @@ body{
 
 #footer .container{
     min-height:1px;
-    padding-top: 50px;
+    padding-top: 50px; 
     padding-right:10%;
     padding-left:10%;
     background-color:#333;

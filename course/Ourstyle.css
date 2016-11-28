@@ -106,7 +106,7 @@ body{
     margin: 0px;
     border: 0px;
     height: 200px;
-    background-image: url('../img/default_header.jpg');
+    background-image: url('img/default_header.jpg');
     background-size: 1920px;
 }
 
@@ -205,6 +205,10 @@ body{
 
 .navli{
     list-style: none;
+}
+
+.nava_on{
+    color: #000;
 }
 
 /*.nava{
